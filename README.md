@@ -66,6 +66,3 @@ You can find Project Tasks [(here)](../main/Tasks.pdf)
 - [x] Update User Course Repartition
 - [x] Display all Course Repartitions for an Specific Student
 - [x] Display all User Course Repartitions
-
-## UML diagram:
-![diagrama](https://user-images.githubusercontent.com/73616883/162612486-e93aad82-90e1-4fcd-86c3-687154a52d22.png)
