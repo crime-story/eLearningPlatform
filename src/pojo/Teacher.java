@@ -2,7 +2,7 @@ package pojo;
 
 public class Teacher extends User {
     private String rank;
-    String hireDate;
+    private String hireDate;
     private float salary;
 
     public Teacher(int id, String username, String phoneNumber, String address, String nationality, String gender, String birthdate, String rank, String hireDate, float salary) {
