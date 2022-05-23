@@ -28,18 +28,18 @@ public class Quiz {
 
     public Quiz(int id, Course course, String name) {
         this.id = id;
-        this.course = course;
-        this.quizName = name;
         if (id > count) {
             count = id;
         }
+        this.course = course;
+        this.quizName = name;
     }
 
     public Quiz(Course course, String name) {
         this.course = course;
         this.quizName = name;
-        this.id = count;
         count++;
+        this.id = count;
     }
 
     @Override

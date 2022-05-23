@@ -1,10 +1,10 @@
 package pojo;
 
-public class CourseMaterials {
+public class CourseMaterial {
     private Course course;
     private Material material;
 
-    public CourseMaterials(Course course, Material material) {
+    public CourseMaterial(Course course, Material material) {
         this.course = course;
         this.material = material;
     }
@@ -19,7 +19,7 @@ public class CourseMaterials {
 
     @Override
     public String toString() {
-        return "CourseMaterials{" +
+        return "CourseMaterial{" +
                 "course=" + course +
                 ", material=" + material +
                 '}';

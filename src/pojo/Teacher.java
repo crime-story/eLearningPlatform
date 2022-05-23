@@ -2,20 +2,20 @@ package pojo;
 
 public class Teacher extends User {
     private String rank;
-    private int yearsOfExperience;
+    String hireDate;
     private float salary;
 
-    public Teacher(int id, String username, String phoneNumber, String address, String nationality, String gender, String birthdate, String rank, int yearsOfExperience, float salary) {
+    public Teacher(int id, String username, String phoneNumber, String address, String nationality, String gender, String birthdate, String rank, String hireDate, float salary) {
         super(id, username, phoneNumber, address, nationality, gender, birthdate);
         this.rank = rank;
-        this.yearsOfExperience = yearsOfExperience;
+        this.hireDate = hireDate;
         this.salary = salary;
     }
 
-    public Teacher(String username, String phoneNumber, String address, String nationality, String gender, String birthdate, String rank, int yearsOfExperience, float salary) {
+    public Teacher(String username, String phoneNumber, String address, String nationality, String gender, String birthdate, String rank, String hireDate, float salary) {
         super(username, phoneNumber, address, nationality, gender, birthdate);
         this.rank = rank;
-        this.yearsOfExperience = yearsOfExperience;
+        this.hireDate = hireDate;
         this.salary = salary;
     }
 
@@ -23,8 +23,8 @@ public class Teacher extends User {
         return rank;
     }
 
-    public int getYearsOfExperience() {
-        return yearsOfExperience;
+    public String getHireDate() {
+        return hireDate;
     }
 
     public float getSalary() {
@@ -35,8 +35,8 @@ public class Teacher extends User {
         this.rank = rank;
     }
 
-    public void setYearsOfExperience(int yearsOfExperience) {
-        this.yearsOfExperience = yearsOfExperience;
+    public void setHireDate(String hireDate) {
+        this.hireDate = hireDate;
     }
 
     public void setSalary(float salary) {
@@ -47,7 +47,7 @@ public class Teacher extends User {
     public String toString() {
         return "Teacher{" +
                 "rank='" + rank + '\'' +
-                ", yearsOfExperience=" + yearsOfExperience +
+                ", hireDate=" + hireDate +
                 ", salary=" + salary +
                 "} " + super.toString();
     }

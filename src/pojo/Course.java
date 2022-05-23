@@ -1,25 +1,24 @@
 package pojo;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Course {
     private int id;
-    private User teacher;
+    private @NotNull Teacher teacher;
     private String courseName;
     private String description;
     private static int count = 0;
 
-    public Course(int id, User teacher, String name, String description) {
+    public Course(int id, @NotNull Teacher teacher, String courseName, String description) {
         this.id = id;
         this.teacher = teacher;
-        this.courseName = name;
+        this.courseName = courseName;
         this.description = description;
-        if (id > count) {
-            count = id;
-        }
     }
 
-    public Course(User teacher, String name, String description) {
+    public Course(@NotNull Teacher teacher, String courseName, String description) {
         this.teacher = teacher;
-        this.courseName = name;
+        this.courseName = courseName;
         this.description = description;
         this.id = count;
         count++;
@@ -37,7 +36,7 @@ public class Course {
         return teacher;
     }
 
-    public void setTeacher(User teacher) {
+    public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
 

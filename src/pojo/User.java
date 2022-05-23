@@ -1,7 +1,5 @@
 package pojo;
 
-import java.util.Date;
-
 public class User {
     private int id;
     private String username;
@@ -14,6 +12,9 @@ public class User {
 
     public User(int id, String username, String phoneNumber, String address, String nationality, String gender, String birthdate) {
         this.id = id;
+        if (id > count) {
+            count = id;
+        }
         this.username = username;
         this.phoneNumber = phoneNumber;
         this.address = address;
@@ -29,8 +30,8 @@ public class User {
         this.nationality = nationality;
         this.gender = gender;
         this.birthdate = birthdate;
-        this.id = count;
         count++;
+        this.id = count;
     }
 
     public int getId() {
@@ -71,6 +72,10 @@ public class User {
 
     public void setNationality(String nationality) {
         this.nationality = nationality;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public boolean setBirthdate(String birthdate) {

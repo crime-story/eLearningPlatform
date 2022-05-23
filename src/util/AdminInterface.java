@@ -13,21 +13,23 @@ public interface AdminInterface {
     List<UserCourseRepartition> userCourseRepartitions = new ArrayList<>();
     List<User> users = new ArrayList<>();
     List<Material> materials = new ArrayList<>();
-    List<CourseMaterials> courseMaterials = new ArrayList<>();
+    List<CourseMaterial> courseMaterials = new ArrayList<>();
 
-    void addCourse(Scanner in);
+    Course addCourse(Scanner in);
 
-    void addCourseFeedback(Scanner in);
+    CourseMaterial addCourseMaterial(Scanner in);
 
-    void addCourseRepartition(Scanner in);
+    CourseFeedback addCourseFeedback(Scanner in);
 
-    void addMaterial(Scanner in);
+    UserCourseRepartition addCourseRepartition(Scanner in);
 
-    void addQuiz(Scanner in);
+    Material addMaterial(Scanner in);
 
-    void addStudent(Scanner in);
+    Quiz addQuiz(Scanner in);
 
-    void addTeacher(Scanner in);
+    Student addStudent(Scanner in);
 
-    void addTeachingAssistant(Scanner in);
+    Teacher addTeacher(Scanner in);
+
+    TeachingAssistant addTeachingAssistant(Scanner in);
 }

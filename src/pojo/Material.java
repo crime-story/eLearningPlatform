@@ -9,20 +9,20 @@ public class Material {
 
     public Material(int id, String materialName, String description, boolean available) {
         this.id = id;
-        this.materialName = materialName;
-        this.description = description;
-        this.available = available;
         if (id > count) {
             count = id;
         }
+        this.materialName = materialName;
+        this.description = description;
+        this.available = available;
     }
 
     public Material(String materialName, String description, boolean available) {
         this.materialName = materialName;
         this.description = description;
         this.available = available;
-        this.id = count;
         count++;
+        this.id = count;
     }
 
     public int getId() {
