@@ -3,6 +3,12 @@
 Implemented an ElearningPlatform in Java 17.0.2 version and stored data with MySQL.
 
 You can find Project Tasks [(here)](../main/Tasks.pdf)
+### Structure of Project:
+- Package dao which contains for each object DDL instructions (create table), DML instructions (insert, update, delete) and sql queries.
+- Package pojo which contains all objects
+- Package util which containts an main service called *ElearningPlatformService*, an interface called *AdmintInterface* which contains some lists of objects and some necessary methods that must be implemented and an dao (Data Access Object) class which is meant to connect to database or if the database isnt created to create one
+- A Main class from which the User can call any of the above options 
+
 ### Objects:
 - Course
 - CourseFeedback
@@ -66,3 +72,6 @@ You can find Project Tasks [(here)](../main/Tasks.pdf)
 - [x] Update User Course Repartition
 - [x] Display all Course Repartitions for an Specific Student
 - [x] Display all User Course Repartitions
+
+### Additional:
+- Audit Service where you can see logs of actions made by an User (name of action & timestamp)
