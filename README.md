@@ -57,7 +57,7 @@ You can find Project Tasks [(here)](../main/Tasks.pdf)
 - [x] Update Course Feedback (only number of stars)
 - [x] Update Course Feedback (only feedback)
 - [x] Display all CourseFeedbacks
-- [x] Display all CourseFeedbacks for an specific Course"
+- [x] Display all CourseFeedbacks for an specific Course
 - [x] Add Quiz
 - [x] Delete Quiz
 - [x] Update Quiz Name
