@@ -7,7 +7,7 @@ You can find Project Tasks [(here)](../main/Tasks.pdf)
 - Package dao which contains for each object:
   * DDL instructions (create table)
   * DML instructions (insert, update, delete)
-  * SQL queries
+  * SQL queries (select)
 - Package pojo which contains all objects
 - Package util which containts:
   * An Main service called *ElearningPlatformService*
