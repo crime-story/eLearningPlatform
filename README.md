@@ -75,3 +75,4 @@ You can find Project Tasks [(here)](../main/Tasks.pdf)
 
 ### Additional:
 - Audit Service where you can see logs of actions made by an User (name of action & timestamp)
+- Used regex expressions for some validations (dateformat, answers (yes/no), number of stars for an Feedback (must be between 0 and 5 only)) given by an user from keyboard
