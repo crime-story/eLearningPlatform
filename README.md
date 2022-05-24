@@ -81,6 +81,7 @@ You can find Project Tasks [(here)](../main/Tasks.pdf)
 
 ### Additional:
 - Audit Service where you can see logs of actions made by an User (name of action & timestamp)
+- Used Singleton Dessing Pattern for *ELearningPlatformService* and Dao objects.
 - Used regex expressions for some validations:
   * Dateformat
   * Answers (must be yes or no)
