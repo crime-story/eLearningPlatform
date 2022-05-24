@@ -4,12 +4,12 @@ Implemented an ElearningPlatform in Java 17.0.2 version and stored data with MyS
 
 You can find Project Tasks [(here)](../main/Tasks.pdf)
 ### Structure of Project:
-- Package dao which contains for each object:
+- Package **dao** which contains for each object:
   * DDL instructions (create table)
   * DML instructions (insert, update, delete)
   * SQL queries (select)
-- Package pojo which contains all objects
-- Package util which containts:
+- Package **pojo** which contains all objects
+- Package **util** which containts:
   * An Main Service called *ElearningPlatformService*
   * An Interface called *AdmintInterface* which contains some lists of objects and some necessary methods that must be implemented
   * An dao (Data Access Object) class which is meant to connect to database or if the database isnt created to create one
