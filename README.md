@@ -13,7 +13,7 @@ You can find Project Tasks [(here)](../main/Tasks.pdf)
   * An Main Service called *ElearningPlatformService*
   * An Interface called *AdmintInterface* which contains some lists of objects and some necessary methods that must be implemented
   * An dao (Data Access Object) class which is meant to connect to database or if the database isnt created to create one
-- A Main class from which the User can call any of the above options 
+- A Main class from which the User can call any of the below options 
 
 ### Objects:
 - Course
